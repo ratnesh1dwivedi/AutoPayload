@@ -1,6 +1,6 @@
-from core.generator import generate_payload
+from core.generate_payload import generate_payload
 from core.handler import create_handler, launch_handler
-from core.server import host_payload
+from core.host_payload import host_payload
 from utils.banner import show_banner
 
 def main():
