@@ -18,7 +18,7 @@ def main():
     print("1. Android")
     print("2. Windows")
     print("3. Linux")
-    platform = int(input("Select target OS: ( 1 | 2 | 3 : ").lower()
+    platform = int(input("Select target OS: ( 1 | 2 | 3 : ")).lower()
     lhost = input("LHOST (your IP): ").strip()
     lport = input("LPORT (listening port): ").strip()
     outfile = input("Output file name (no extension): ").strip()
