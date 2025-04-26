@@ -1,4 +1,4 @@
-def generate_payload(platform, lhost, lport, outfile, arch, encoder):
+def generate_payload(platform, lhost, lport, outfile):
     import os
 
     payloads = {
