@@ -13,8 +13,8 @@ print("""
 """)
 
 def main():
-    show_banner()
-    platform = int(input("Select target OS: android | windows | linxu: ")).lower()
+    #show_banner()
+    platform = input("Select target OS: android | windows | linux: ").lower()
     lhost = input("LHOST (your IP): ").strip()
     lport = input("LPORT (listening port): ").strip()
     arch = input("Architecture (x86 | x64): ").strip()
